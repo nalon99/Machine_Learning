@@ -27,7 +27,7 @@ With the hypothesis set above, we expect a low out of sample error rate, less th
 
 The following code has been used to achieve the model fitting with the Random Forest algorithm. The code is self-commented
 
-```{r main, eval=FALSE}
+```{r main, eval=TRUE}
 require(caret)
 training <- read.csv("./datasets/pml-training.csv", row.names = 1)
 testing <- read.csv("./datasets/pml-testing.csv", row.names = 1)
