@@ -73,11 +73,17 @@ outOfSample <- function(obj) {
     sum(obj$trainingData$.outcome != obj$finalModel$predicted)/length(obj$trainingData$.outcome)
 }
 
-
 message("Out of sample error is ", round(outOfSample(modelFit2)*100, 2), " %")
 ```
 
 Out of sample error is very low and within the expected value.
+
+Other interesting results from the model
+
+```{r, echo=FALSE}
+# print out results from fitting
+modelFit2
+```
 
 ### Plot section
 
