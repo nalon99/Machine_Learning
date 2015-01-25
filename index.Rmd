@@ -29,8 +29,8 @@ The following code has been used to achieve the model fitting with the Random Fo
 
 ```{r main, eval=TRUE}
 require(caret)
-training <- read.csv("./datasets/pml-training.csv", row.names = 1)
-testing <- read.csv("./datasets/pml-testing.csv", row.names = 1)
+training <- read.csv("./data/pml-training.csv", row.names = 1)
+testing <- read.csv("./data/pml-testing.csv", row.names = 1)
 
 # from exploratory analysis many of the predictor variables in the training set are sparse.
 # they are removed from the training set as well as some other variables "num_window", "user_name" and timestamps.
